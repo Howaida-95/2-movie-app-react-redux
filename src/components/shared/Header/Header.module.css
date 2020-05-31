@@ -1,0 +1,42 @@
+.Header {
+  width: 100%;
+  height: auto;
+  background: #1c1c1c;
+  padding: 0 20px;
+}
+
+.Content {
+  max-width: 1280px;
+  min-height: 120px;
+  height: auto;
+  padding: 25px 0px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.MovieLogo {
+  width: 300px;
+  margin-top: 20px;
+}
+
+.dbLogo {
+  width: 122px;
+  margin-top: 25px;
+}
+
+@media screen and (max-width: 576px) {
+  .Content {
+    min-height: 0px;
+  }
+
+  .dbLogo {
+    width:80px;
+    margin-top: 0px;
+  }
+
+  .MovieLogo {
+    width: 150px;
+    margin-top: 5px;
+  }
+}

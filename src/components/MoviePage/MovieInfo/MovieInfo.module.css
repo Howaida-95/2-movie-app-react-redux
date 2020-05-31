@@ -1,0 +1,115 @@
+.MovieInfo {
+  background-size: cover !important;
+  background-position: center !important;
+  width: 100%;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  animation: animateMovieinfo 1s;
+}
+
+@keyframes animateMovieinfo {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+.InfoContent {
+  max-width: 1280px;
+  min-height: 450px;
+  margin: 0 auto;
+  background: rgb(0, 0, 0, 0.7);
+  border-radius: 20px;
+  position: relative;
+}
+
+.InfoThumb {
+  width: 300px;
+  float: left;
+}
+
+.InfoText {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 40px;
+  color: #fff;
+  overflow: hidden;
+}
+
+.InfoText h1 {
+  font-family: 'Abel', sans-serif;
+  font-size: 48px;
+  margin: 0;
+}
+
+.InfoText h3 {
+  font-size: 16px;
+  line-height: 0;
+  margin-top: 30px;
+}
+
+.InfoText p {
+  font-family: 'Abel', sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.RmdbRating {
+  width: 190px;
+  height: 20px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.RmdbScore {
+  position: absolute;
+  margin: 0;
+  right: 0px;
+  top: -3px;
+}
+
+.Director {
+  margin: 0;
+}
+
+.Icon {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  color: #fff;
+}
+
+meter::-webkit-meter-bar {
+  background: #fff;
+  width: 150px;
+}
+meter::-webkit-meter-optimum-value {
+  background: linear-gradient(to bottom, #16d47b) !important;
+}
+meter::-webkit-meter-suboptimum-value {
+  background: linear-gradient(to bottom, #fbb450) !important;
+}
+meter::-webkit-meter-even-less-good-value {
+  background: linear-gradient(to bottom, #ee5f5b) !important;
+}
+
+@media screen and (max-width: 992px) {
+  .InfoText h1 {
+    font-size: 32px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .MovieInfo {
+    height: auto;
+  }
+
+  .InfoThumb {
+    width: 100% !important;
+  }
+
+  .Icon {
+    display: none;
+  }
+
+  .InfoText h1 {
+    font-size: 32px;
+  }  
+}

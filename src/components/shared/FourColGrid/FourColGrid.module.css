@@ -1,0 +1,35 @@
+.Grid h1 {
+  font-family: 'Abel', sans-serif;
+  font-size:42px;
+}
+
+.Content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Element {
+  width: 100%; /* 1 column in xs screens*/
+  flex: 0 0 1; /* columns with equal width */
+  padding: 20px;
+  animation: animateGrid 0.5s;
+}
+
+/* sm screens */
+@media(min-width: 576px) and (max-width: 768px){ 
+  .Element {
+    width: 50%;
+  }
+} 
+/* md & lg screens*/
+@media(min-width: 768px) { 
+  .Element {
+    width: calc(100% /3);
+  }
+} 
+/* xl screens*/
+@media(min-width: 1200px) { 
+  .Element {
+    width: 25%;
+  }
+} 

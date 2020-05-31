@@ -1,0 +1,29 @@
+.Actor {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+}
+.Actor img{
+  width: 100%;
+  vertical-align: middle;
+  border-style: none;
+  border-top-left-radius: calc(.25rem - 1px);
+  border-top-right-radius: calc(.25rem - 1px);
+}
+.ActorInfo {
+  flex: 1 1 auto;
+  padding: 10px;
+  font-family: 'Abel', sans-serif;
+}
+.ActorName{
+  font-size: 22px;
+}
+.ActorCharacter{
+  font-size: 18px;
+}
